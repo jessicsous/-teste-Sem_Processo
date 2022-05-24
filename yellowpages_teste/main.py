@@ -55,6 +55,10 @@ def faz_raspagem():
         arquivo.write(terceiro_dado + '\n')
         arquivo.close()
 
+def sair():
+    driver.quit()
+
 for servico in servicos:
     pesquisa_servico(servico)
     faz_raspagem()
+    sair()

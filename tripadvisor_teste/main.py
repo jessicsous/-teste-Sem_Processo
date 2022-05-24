@@ -41,10 +41,14 @@ def raspagem():
         arquivo.write(f'cidade: {ponto_turistico}\n')
         arquivo.close()
 
+def sair():
+    navegador.quit()
+
 for pesquisa in pesquisas:
     primeiro_botao()
     input(pesquisa)
     raspagem()
+    sair()
 
 
 
