@@ -1,0 +1,4 @@
+cidade: Belo Horizonte
+cidade: Minas Gerais, Brasil
+cidade: O nome já diz tudo: Belo Horizonte oferece vistas incríveis das montanhas que cercam a cidade. Construída há cerca de um século como uma cidade planejada, suas ruas arborizadas formam uma rede
+cidade: Mercado Central de Belo Horizonte
