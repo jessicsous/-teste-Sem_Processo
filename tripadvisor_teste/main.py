@@ -8,6 +8,7 @@ options.add_argument('window-size=1280,720')
 navegador = webdriver.Chrome(options=options)
 navegador.get('https://www.tripadvisor.com.br')
 
+# escreve o local à ser pesquisado
 pesquisas = ['Belo Horizonte']
 sleep(4)
 
@@ -33,7 +34,7 @@ def raspagem():
     descricao = navegador.find_element_by_xpath('//*[@id="BODY_BLOCK_JQUERY_REFLOW"]/div[2]/div/div[2]/div/div/div/div/div[1]/div/div[1]/div/div[3]/div/div[1]/div/div[2]/div/div/div[1]/div/div/div/div[2]/div[2]/div').text
     ponto_turistico = navegador.find_element_by_xpath('//*[@id="BODY_BLOCK_JQUERY_REFLOW"]/div[2]/div/div[2]/div/div/div/div/div[1]/div/div[1]/div/div[3]/div/div[1]/div/div[2]/div/div/div[2]/div/div/div/div[2]/div/div[1]').text
 
-    # guarda na TripAdvisor.txt
+    # guarda na pasta TripAdvisor.txt
     with open('tripadvisor.txt', 'w+') as arquivo:
         arquivo.write(f'cidade: {cidade}\n')
         arquivo.write(f'cidade: {estado}\n')
@@ -41,9 +42,11 @@ def raspagem():
         arquivo.write(f'cidade: {ponto_turistico}\n')
         arquivo.close()
 
+# mata o navegador
 def sair():
     navegador.quit()
 
+# iteração com a ordem de execução
 for pesquisa in pesquisas:
     primeiro_botao()
     input(pesquisa)

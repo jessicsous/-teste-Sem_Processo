@@ -26,27 +26,22 @@ def faz_raspagem():
     cidade = driver.find_elements_by_xpath('//div[@class="locality"]')
     comentario = driver.find_elements_by_xpath('//p[@class="body with-avatar"]')
 
-    # primeiro serviço
-    telefone1 = telefone[0].text
-    endereco1 = endereco[0].text
-    cidade1 = cidade[0].text
-    comentario1 = comentario[0].text
+    tel = []
+    end = []
+    cid = []
+    com = []
+    
+    # iteração entre os indices dos dados
+    for i in range(3):
+        tel.append(telefone[i].text)
+        end.append(endereco[i].text)
+        cid.append(cidade[i].text)
+        com.append(comentario[i].text)
 
-    # segundo serviço
-    telefone2 = telefone[1].text
-    endereco2 = endereco[1].text
-    cidade2 = cidade[1].text
-    comentario2 = comentario[1].text
-
-    # terceiro serviço
-    telefone3 = telefone[2].text
-    endereco3 = endereco[2].text
-    cidade3 = cidade[2].text
-    comentario3 = comentario[2].text
-
-    primeiro_dado = (telefone1 + ';' + endereco1 + ';' + cidade1 + ';' + comentario1)
-    segundo_dado = (telefone2 + ';' + endereco2 + ';' + cidade2 + ';' + comentario2)
-    terceiro_dado = (telefone3 + ';' + endereco3 + ';' + cidade3 + ';' + comentario3)
+    # junta os dados em variáveis
+    primeiro_dado = (tel[0] + ';' + end[0] + ';' + cid[0] + ';' + com[0])
+    segundo_dado = (tel[1] + ';' + end[1] + ';' + cid[1] + ';' + com[1])
+    terceiro_dado = (tel[2] + ';' + end[2] + ';' + cid[2] + ';' + com[2])
 
     # salva em arquivo .txt
     with open('yellowpages.txt', 'w+') as arquivo:
@@ -55,9 +50,11 @@ def faz_raspagem():
         arquivo.write(terceiro_dado + '\n')
         arquivo.close()
 
+# mata o navegador
 def sair():
     driver.quit()
 
+# iteração com a ordem de execução
 for servico in servicos:
     pesquisa_servico(servico)
     faz_raspagem()
