@@ -1,4 +1,18 @@
 # -teste-Sem_Processo
+<h2 align="center">
+
+
+<h2>Tripadvisor</h2>
+
+<img src="https://ik.imagekit.io/cs5yecvr2d/sem-t%C3%ADtulo_7Ly3dvcNs.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1653439329214">
+
+<h2>Yellow Pages</h2>
+
+<img src="https://ik.imagekit.io/cs5yecvr2d/sem-t%C3%ADtulo1_BnLK2Xb1H.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1653439352383">
+
+</h2>
+
+---
 
 ## Indice
 
@@ -45,3 +59,9 @@ Para execução desse projeto é necessaria a instalação do ChromeWebDriver de
 
 ```
 
+<br>
+<h2 align="center">
+
+<img src="https://img.shields.io/github/license/jessicsous/-teste-Sem_Processo?style=for-the-badge"/>
+
+</h2>
