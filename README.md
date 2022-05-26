@@ -24,7 +24,7 @@
 
 ## Sobre
 
-O projeto <b>-teste-Sem_processo</b> é um web scraping que foi criado com o intuito de fazer uma raspagem de dados de duas paginas web utilizando python e selenium.
+O projeto <b>-teste-Sem_processo</b> é um web scraping que foi criado com o objetivo de fazer uma coleta de dados de duas paginas web, utilizando python e selenium.
 
 ---
 
@@ -40,7 +40,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 
 ## Como baixar e executar o projeto
 
-Para execução desse projeto é necessaria a instalação do ChromeWebDriver de mesma versão da sua máquina.
+Para execução desse projeto é necessária a instalação do ChromeWebDriver cuja versão seja a mesma do chrome da sua máquina.
 
 - [ChromeWebDriver](https://chromedriver.chromium.org/downloads)
 
