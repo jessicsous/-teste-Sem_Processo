@@ -37,9 +37,9 @@ def raspagem():
     # guarda na pasta TripAdvisor.txt
     with open('tripadvisor.txt', 'w+') as arquivo:
         arquivo.write(f'cidade: {cidade}\n')
-        arquivo.write(f'cidade: {estado}\n')
-        arquivo.write(f'cidade: {descricao}\n')
-        arquivo.write(f'cidade: {ponto_turistico}\n')
+        arquivo.write(f'estado: {estado}\n')
+        arquivo.write(f'descrição: {descricao}\n')
+        arquivo.write(f'ponto turístico: {ponto_turistico}\n')
         arquivo.close()
 
 # mata o navegador
