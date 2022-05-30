@@ -41,6 +41,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 ## Como baixar e executar o projeto
 
 Para execução desse projeto é necessária a instalação do ChromeWebDriver cuja versão seja a mesma do chrome da sua máquina.
+Quem usa Linux deve mover o arquivo baixado para dentro da pasta /usr/bin.
 
 - [ChromeWebDriver](https://chromedriver.chromium.org/downloads)
 
